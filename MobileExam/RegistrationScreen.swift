@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RegistrationScreen: UIViewController, UITextFieldDelegate {
+class RegistrationScreen: UIViewController, UITextFieldDelegate, RegistrationScreenView {
     
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -22,7 +22,7 @@ class RegistrationScreen: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    lazy var presenter = RegistrationScreenPresenter()
+    var presenter:RegistrationScreenPresenter?
 
     @IBAction func registerUser(_ sender: UIButton) {
         
@@ -68,6 +68,11 @@ class RegistrationScreen: UIViewController, UITextFieldDelegate {
             user.password = pword
         }
         
+        if presenter==nil {
+            presenter = RegistrationScreenPresenter(view:self)
+        }
+        
+        
         presenter.registerUser(user)
         
     }
@@ -76,5 +81,14 @@ class RegistrationScreen: UIViewController, UITextFieldDelegate {
         
         self.view.endEditing(true)
         return false
+    }
+    
+    func registerUserSuccess() {
+        
+    }
+    
+    func registerUserFailed() {
+        
+        
     }
 }

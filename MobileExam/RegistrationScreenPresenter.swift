@@ -10,8 +10,12 @@ import Foundation
 
 class RegistrationScreenPresenter{
     
-    
+     var view:RegistrationScreenView?
     private let operationQueue: OperationQueue = OperationQueue()
+    
+    init(view:RegistrationScreenView) {
+        self.view = view
+    }
     
     
     public func registerUser(_ user:User){
