@@ -18,12 +18,18 @@ class RegisterUserAsyncOperation:AsyncOperation{
     init(user:User, callback:RegistrationScreenView) {
         
         self.user = user
+        self.callback = callback
         
         super.init()
     }
     
     override func start() {
         super.start()
+        
+//        JSON: {
+//            error = 1;
+//            message = "Email Address was already in used.";
+//        }
         
         
         //"username": "lui",
@@ -44,8 +50,19 @@ class RegisterUserAsyncOperation:AsyncOperation{
         Alamofire.request("http://54.68.88.28/mobile_exam/api/v1/user-registration", method: .post, parameters: parameters).responseJSON { response in
 
             
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+//            if let json = response.result.value {
+//                print("JSON: \(json)") // serialized json response
+//            }
+            
+            let responseJSON = response.result.value as? [String: Any]
+            if (responseJSON?["error"]) != nil {
+                
+                let error = responseJSON?["error"] as! Bool
+                let message = responseJSON?["message"] as! String
+                
+                if success {
+                    self.callback?.registerUserComplete(error: error, message: message)
+                }
             }
             
 

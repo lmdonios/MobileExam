@@ -20,7 +20,7 @@ class RegistrationScreenPresenter{
     
     public func registerUser(_ user:User){
         
-        let operation = RegisterUserAsyncOperation(user: user)
+        let operation = RegisterUserAsyncOperation(user: user, callback:view!)
         
         operationQueue.addOperation(operation)
     

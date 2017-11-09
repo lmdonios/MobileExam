@@ -9,6 +9,6 @@
 import Foundation
 
 protocol RegistrationScreenView {
-    func registerUserSuccess()
-    func registerUserFailed()
+    
+    func registerUserComplete(error:Bool, message:String)
 }

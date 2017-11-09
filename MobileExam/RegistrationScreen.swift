@@ -73,7 +73,7 @@ class RegistrationScreen: UIViewController, UITextFieldDelegate, RegistrationScr
         }
         
         
-        presenter.registerUser(user)
+        presenter?.registerUser(user)
         
     }
     
@@ -83,12 +83,7 @@ class RegistrationScreen: UIViewController, UITextFieldDelegate, RegistrationScr
         return false
     }
     
-    func registerUserSuccess() {
-        
-    }
+    func registerUserComplete(error:Bool, message:String){
     
-    func registerUserFailed() {
-        
-        
     }
 }
