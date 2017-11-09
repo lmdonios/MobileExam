@@ -20,7 +20,8 @@ struct User {
     var zip:String?
     var username:String?
     var password:String?
-    
+    var tokenID:String?
+    var tokenKey:String?
     
     
 

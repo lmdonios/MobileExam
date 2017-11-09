@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 
-class RegisterUserOperation:AsyncOperation{
+class RegisterUserAsyncOperation:AsyncOperation{
     
     var user:User!
 

@@ -16,7 +16,7 @@ class RegistrationScreenPresenter{
     
     public func registerUser(_ user:User){
         
-        let operation = RegisterUserOperation(user: user)
+        let operation = RegisterUserAsyncOperation(user: user)
         
         operationQueue.addOperation(operation)
     

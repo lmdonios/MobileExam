@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-class LoginScreen : UIViewController{
+class LoginScreen : UIViewController, LoginScreenView{
     
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
-    lazy var presenter = LoginScreenPresenter()
+    var presenter:LoginScreenPresenter?
     
     @IBAction func registerUser(_ sender: UIButton) {
         
@@ -24,7 +24,27 @@ class LoginScreen : UIViewController{
     
     @IBAction func loginUser(_ sender: UIButton) {
         
-        presenter.loginUser(username: "", password: "")
+        if presenter==nil{
+            presenter = LoginScreenPresenter(view: self)
+        }
         
+        let username = usernameTextField.text
+        let password = passwordTextfield.text
+        
+        presenter?.loginUser(username: username!, password: password!)
+        
+    }
+    
+    func loginSucess(_ user: User) {
+        //print("Hello, \(user.username)")
+        
+        usernameTextField.text = ""
+        passwordTextfield.text = ""
+        
+        self.performSegue(withIdentifier: "login_success", sender: self)
+    }
+    
+    func loginFailed(_ message: String) {
+        print(message)
     }
 }

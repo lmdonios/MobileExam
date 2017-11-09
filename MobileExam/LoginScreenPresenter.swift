@@ -11,10 +11,15 @@ import Foundation
 class LoginScreenPresenter{
     
     private let operationQueue: OperationQueue = OperationQueue()
+    private var view:LoginScreenView?
+    
+    init(view:LoginScreenView){
+        self.view = view
+    }
     
     public func loginUser(username:String, password:String){
         
-        let operation = LoginUserOperation(username: "lui", password:"abc123#")
+        let operation = LoginUserAsyncOperation(username: username, password:password, callback:view!)
         
         operationQueue.addOperation(operation)
     }
