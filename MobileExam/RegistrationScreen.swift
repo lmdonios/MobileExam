@@ -24,6 +24,9 @@ class RegistrationScreen: UIViewController, UITextFieldDelegate, RegistrationScr
     
     var presenter:RegistrationScreenPresenter?
 
+    @IBAction func back(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBAction func registerUser(_ sender: UIButton) {
         
         var user = User()
@@ -83,7 +86,20 @@ class RegistrationScreen: UIViewController, UITextFieldDelegate, RegistrationScr
         return false
     }
     
-    func registerUserComplete(error:Bool, message:String){
+    var error:Bool?
     
+    func registerUserComplete(error:Bool, message:String){
+        
+        self.error = error
+        
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: { action in
+            if !error{
+                // do something like...
+                self.dismiss(animated: true, completion: nil)
+            }
+            
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }

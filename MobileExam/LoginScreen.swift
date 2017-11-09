@@ -45,6 +45,9 @@ class LoginScreen : UIViewController, LoginScreenView{
     }
     
     func loginFailed(_ message: String) {
-        print(message)
+        let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        
     }
 }

@@ -60,9 +60,9 @@ class RegisterUserAsyncOperation:AsyncOperation{
                 let error = responseJSON?["error"] as! Bool
                 let message = responseJSON?["message"] as! String
                 
-                if success {
-                    self.callback?.registerUserComplete(error: error, message: message)
-                }
+               
+                self.callback?.registerUserComplete(error: error, message: message)
+                
             }
             
 
