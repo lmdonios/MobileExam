@@ -11,13 +11,10 @@
 		251DF0341FB4054200562084 /* UpdateUserOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DF0331FB4054200562084 /* UpdateUserOperation.swift */; };
 		251DF0361FB40A9200562084 /* GetUserDetailsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DF0351FB40A9200562084 /* GetUserDetailsOperation.swift */; };
 		251DF0381FB40B2D00562084 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DF0371FB40B2D00562084 /* WelcomeScreen.swift */; };
-		251DF03A1FB40FA500562084 /* EditProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DF0391FB40FA500562084 /* EditProfileScreen.swift */; };
 		251DF03C1FB417A100562084 /* UpdateUserAsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DF03B1FB417A100562084 /* UpdateUserAsyncOperation.swift */; };
 		251DF03E1FB41B1400562084 /* EditProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DF03D1FB41B1400562084 /* EditProfileScreenView.swift */; };
-		251DF0441FB41FBE00562084 /* EditProfileScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DF0431FB41FBE00562084 /* EditProfileScreenPresenter.swift */; };
 		251DF0461FB4333A00562084 /* LogoutUserAsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DF0451FB4333A00562084 /* LogoutUserAsyncOperation.swift */; };
 		251DF0481FB433D300562084 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DF0471FB433D300562084 /* WelcomeScreenView.swift */; };
-		251DF04A1FB435A200562084 /* WelcomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251DF0491FB435A200562084 /* WelcomeScreenPresenter.swift */; };
 		25A445371FB43F5900DDCFB9 /* RegistrationScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A445361FB43F5900DDCFB9 /* RegistrationScreenView.swift */; };
 		25B265811FB272C40091F658 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B265801FB272C40091F658 /* AppDelegate.swift */; };
 		25B265831FB272C40091F658 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B265821FB272C40091F658 /* ViewController.swift */; };
@@ -35,6 +32,9 @@
 		25E2735C1FB2CDC000AF5F93 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E2735B1FB2CDC000AF5F93 /* Alamofire.framework */; };
 		25E2735E1FB2DAE400AF5F93 /* LoginScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E2735D1FB2DAE400AF5F93 /* LoginScreenPresenter.swift */; };
 		71FD117CEE2657B8170F904C /* Pods_MobileExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D782436E848CA376CEA2E785 /* Pods_MobileExam.framework */; };
+		B23807A51FB550D500557E28 /* EditProfileScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23807A41FB550D500557E28 /* EditProfileScreenPresenter.swift */; };
+		B23807A71FB5510500557E28 /* WelcomScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23807A61FB5510500557E28 /* WelcomScreenPresenter.swift */; };
+		B23807A91FB5514E00557E28 /* EditProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23807A81FB5514E00557E28 /* EditProfileScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,13 +42,10 @@
 		251DF0331FB4054200562084 /* UpdateUserOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserOperation.swift; sourceTree = "<group>"; };
 		251DF0351FB40A9200562084 /* GetUserDetailsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserDetailsOperation.swift; sourceTree = "<group>"; };
 		251DF0371FB40B2D00562084 /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
-		251DF0391FB40FA500562084 /* EditProfileScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileScreen.swift; sourceTree = "<group>"; };
 		251DF03B1FB417A100562084 /* UpdateUserAsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserAsyncOperation.swift; sourceTree = "<group>"; };
 		251DF03D1FB41B1400562084 /* EditProfileScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileScreenView.swift; sourceTree = "<group>"; };
-		251DF0431FB41FBE00562084 /* EditProfileScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileScreenPresenter.swift; sourceTree = "<group>"; };
 		251DF0451FB4333A00562084 /* LogoutUserAsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutUserAsyncOperation.swift; sourceTree = "<group>"; };
 		251DF0471FB433D300562084 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
-		251DF0491FB435A200562084 /* WelcomeScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenPresenter.swift; sourceTree = "<group>"; };
 		25A445361FB43F5900DDCFB9 /* RegistrationScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationScreenView.swift; sourceTree = "<group>"; };
 		25B2657D1FB272C40091F658 /* MobileExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B265801FB272C40091F658 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +65,9 @@
 		25E2735B1FB2CDC000AF5F93 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/MobileExam-bnnueclaaoqhqhciiqawysphbuji/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		25E2735D1FB2DAE400AF5F93 /* LoginScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenPresenter.swift; sourceTree = "<group>"; };
 		7CF4497309B4472A7F2400A0 /* Pods-MobileExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileExam.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileExam/Pods-MobileExam.release.xcconfig"; sourceTree = "<group>"; };
+		B23807A41FB550D500557E28 /* EditProfileScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileScreenPresenter.swift; sourceTree = "<group>"; };
+		B23807A61FB5510500557E28 /* WelcomScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomScreenPresenter.swift; sourceTree = "<group>"; };
+		B23807A81FB5514E00557E28 /* EditProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileScreen.swift; sourceTree = "<group>"; };
 		B8A1711BF9ACF771A8AFE078 /* Pods-MobileExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileExam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileExam/Pods-MobileExam.debug.xcconfig"; sourceTree = "<group>"; };
 		D782436E848CA376CEA2E785 /* Pods_MobileExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,9 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				25E2735D1FB2DAE400AF5F93 /* LoginScreenPresenter.swift */,
-				251DF0431FB41FBE00562084 /* EditProfileScreenPresenter.swift */,
-				251DF0491FB435A200562084 /* WelcomeScreenPresenter.swift */,
 				25B265A31FB2C3590091F658 /* RegistrationScreenPresenter.swift */,
+				B23807A41FB550D500557E28 /* EditProfileScreenPresenter.swift */,
+				B23807A61FB5510500557E28 /* WelcomScreenPresenter.swift */,
 			);
 			name = presenters;
 			sourceTree = "<group>";
@@ -110,10 +110,10 @@
 		251DF0411FB41BA300562084 /* screens */ = {
 			isa = PBXGroup;
 			children = (
-				251DF0391FB40FA500562084 /* EditProfileScreen.swift */,
 				25B265A11FB2BAC20091F658 /* RegistrationScreen.swift */,
 				25B265951FB2AD990091F658 /* LoginScreen.swift */,
 				251DF0371FB40B2D00562084 /* WelcomeScreen.swift */,
+				B23807A81FB5514E00557E28 /* EditProfileScreen.swift */,
 			);
 			name = screens;
 			sourceTree = "<group>";
@@ -316,22 +316,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				251DF0481FB433D300562084 /* WelcomeScreenView.swift in Sources */,
+				B23807A71FB5510500557E28 /* WelcomScreenPresenter.swift in Sources */,
 				251DF0361FB40A9200562084 /* GetUserDetailsOperation.swift in Sources */,
 				25B265831FB272C40091F658 /* ViewController.swift in Sources */,
 				251DF0341FB4054200562084 /* UpdateUserOperation.swift in Sources */,
 				25B265A01FB2B9660091F658 /* RegisterUserAsyncOperation.swift in Sources */,
-				251DF04A1FB435A200562084 /* WelcomeScreenPresenter.swift in Sources */,
 				25B265A21FB2BAC20091F658 /* RegistrationScreen.swift in Sources */,
 				25B265A41FB2C3590091F658 /* RegistrationScreenPresenter.swift in Sources */,
 				251DF0301FB3E70900562084 /* LoginScreenView.swift in Sources */,
 				25B265961FB2AD990091F658 /* LoginScreen.swift in Sources */,
 				25B265811FB272C40091F658 /* AppDelegate.swift in Sources */,
-				251DF03A1FB40FA500562084 /* EditProfileScreen.swift in Sources */,
+				B23807A91FB5514E00557E28 /* EditProfileScreen.swift in Sources */,
+				B23807A51FB550D500557E28 /* EditProfileScreenPresenter.swift in Sources */,
 				25B2659E1FB2B7090091F658 /* LoginUserAsyncOperation.swift in Sources */,
 				25B265981FB2AFB20091F658 /* AsyncOperation.swift in Sources */,
 				251DF03E1FB41B1400562084 /* EditProfileScreenView.swift in Sources */,
 				251DF0461FB4333A00562084 /* LogoutUserAsyncOperation.swift in Sources */,
-				251DF0441FB41FBE00562084 /* EditProfileScreenPresenter.swift in Sources */,
 				25E2735E1FB2DAE400AF5F93 /* LoginScreenPresenter.swift in Sources */,
 				251DF0381FB40B2D00562084 /* WelcomeScreen.swift in Sources */,
 				25B265891FB272C40091F658 /* MobileExam.xcdatamodeld in Sources */,

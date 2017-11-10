@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -443,7 +443,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveNewProfileDetails:" destination="XXD-IM-mug" eventType="touchUpInside" id="kA7-cO-FZg"/>
+                                    <action selector="saveProfileDetails:" destination="XXD-IM-mug" eventType="touchUpInside" id="2mm-gs-sXE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -459,16 +459,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="adressTextField" destination="at0-D2-KDc" id="i5c-qw-sfi"/>
-                        <outlet property="cityTextField" destination="bM1-G8-QxW" id="Z4H-b1-BUf"/>
-                        <outlet property="emailTextField" destination="J2J-KA-xjn" id="lb4-ds-rqg"/>
-                        <outlet property="firstNameTextField" destination="vlh-W1-lky" id="EYI-t9-GcE"/>
-                        <outlet property="lastNameTextField" destination="DgW-7l-Jih" id="XoS-1O-aPU"/>
-                        <outlet property="mobileTextField" destination="dKY-fd-P1K" id="fee-sV-ONd"/>
-                        <outlet property="passwordTextField" destination="wxL-jS-DbT" id="FIc-yJ-fpv"/>
-                        <outlet property="stateTextField" destination="VJx-yK-PTq" id="A4R-iy-KKz"/>
-                        <outlet property="usernameTextField" destination="kko-Xs-4JU" id="fvw-gZ-cap"/>
-                        <outlet property="zipTextField" destination="ZTl-oZ-PrH" id="SA1-c5-9DP"/>
+                        <outlet property="addressTextField" destination="at0-D2-KDc" id="4xJ-x2-gAV"/>
+                        <outlet property="cityTextField" destination="bM1-G8-QxW" id="L5K-mQ-gj4"/>
+                        <outlet property="emailTextField" destination="J2J-KA-xjn" id="Sf3-9c-vFe"/>
+                        <outlet property="firstnameTextField" destination="vlh-W1-lky" id="mzN-aE-XrB"/>
+                        <outlet property="lastnameTextField" destination="DgW-7l-Jih" id="kJZ-Ft-Sh0"/>
+                        <outlet property="mobileTextField" destination="dKY-fd-P1K" id="CZ9-gR-haJ"/>
+                        <outlet property="passwordTextField" destination="wxL-jS-DbT" id="52Z-Vf-sgf"/>
+                        <outlet property="stateTextField" destination="VJx-yK-PTq" id="AUA-w7-uj5"/>
+                        <outlet property="usernameTextField" destination="kko-Xs-4JU" id="9zp-CJ-thx"/>
+                        <outlet property="zipTextField" destination="ZTl-oZ-PrH" id="aBr-UH-aYh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ftd-fu-ogl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -481,7 +481,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mSK-rQ-5rF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yc8-QV-iXG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
